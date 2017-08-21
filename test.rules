@@ -30,3 +30,12 @@ alert tcp any any -> any 80 (msg:"winclub88 rule"; content:".html HTTP"; content
 alert tcp any any -> any 80 (msg:"gilgil mp4 rule"; content:".mp4 HTTP"; content:"Host: test.gilgil.net"; sid:10030; rev:1;)
 alert tcp any any -> any 80 (msg:"linoit rule"; content:"GET /users/men1212/canvases/19%EA%B8%88%20 HTTP"; content:"Host: www.linoit.com"; sid:10031; rev:1;)
 alert tcp any any -> any 80 (msg:"ilbe rule"; content:"GET / HTTP"; content:"Host: www.ilbe.com"; sid:10032; rev:1;)
+
+alert dns any any -> any any (msg:"graphgame.net rule"; dns_query; content:"graphgame.net"; nocase; sid:1;)
+alert dns any any -> any any (msg:"mujige53770.wixsite.com rule"; dns_query; content:"mujige53770.wixsite.com"; nocase; sid:2;)
+alert dns any any -> any any (msg:"sex.com rule"; dns_query; content:"sex.com"; nocase; sid:3;)
+alert dns any any -> any any (msg:"torrenthaja.com rule"; dns_query; content:"torrenthaja.com"; nocase; sid:4;)
+alert dns any any -> any any (msg:"torrentkim10.net rule"; dns_query; content:"torrentkim10.net"; nocase; sid:5;)
+alert dns any any -> any any (msg:"webtoon.bamtoki.com rule"; dns_query; content:"webtoon.bamtoki.com"; nocase; sid:6;)
+alert dns any any -> any any (msg:"mtbucks.com rule"; dns_query; content:"mtbucks.com"; nocase; sid:7;)
+alert dns any any -> any any (msg:"phishtank.com rule"; dns_query; content:"phishtank.com"; nocase; sid:8;)
